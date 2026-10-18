@@ -57,7 +57,7 @@
 ## Скриншоты
 
 ### Интерфейс и справочники
-![Студенты](./screenshots/21-forma-studenti.png)
+![Студенты](./screenshots/21-forma-stydenti.png)
 ![Преподаватели](./screenshots/10-prepodavateli.png)
 ![Курсы](./screenshots/11-kyrsi.png)
 ![Группы](./screenshots/13-gruppy.png)
@@ -70,6 +70,7 @@
 
 ### Отчеты и Внешняя обработка
 ![Отчет группы](./screenshots/05-otchet-spisok-grupp.png)
+![Отчет группы, пользователь - преподаватель](./screenshots/15-otchet-ot-prepodavatelia.png)
 ![Отчет финансы](./screenshots/04-otchet-finansy.png)
 ![Отчет контроль мест](./screenshots/12-otchet-kontrol-mest.png)
 ![Внешняя обработка](./screenshots/06-vneshnyaya-obrabotka.png)
@@ -86,10 +87,10 @@
 
 #### Внешняя обработка и формы
 ![Код обработки](./screenshots/26-vneshnyaya-obrabotka-obnovlenie.png)
-![Форма заполнения](./screenshots/28-forma-zapolnit-stoimost.png)
+![Форма заполнения](./screenshots/28-forma-zapolnit-stoimoct.png)
 
 #### БСП, Роли и Пользователи
-![Код БСП](./screenshots/23-modul-sesnsa.png)
+![Код БСП](./screenshots/23-modul-seansa.png)
 ![Список пользователей](./screenshots/24-polzovateli.png)
 ![Роль Преподаватель](./screenshots/22-prava-prepodavateli.png)
 ![Права доступа](./screenshots/25-prava-dostupa.png)
