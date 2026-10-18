@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СтараяГруппа" id="7">
+			<DataPath>Объект.СтараяГруппа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтараяГруппаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СтараяГруппаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НоваяГруппа" id="10">
+			<DataPath>Объект.НоваяГруппа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НоваяГруппаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НоваяГруппаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="СоставГруппы" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СоставГруппы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СоставГруппыКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="СоставГруппыКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="СоставГруппыРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="СоставГруппыСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>СоставГруппы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставГруппыСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СоставГруппыСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СоставГруппыСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>СоставГруппы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставГруппыСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СоставГруппыСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СоставГруппыУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>СоставГруппы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставГруппыУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СоставГруппыУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СоставГруппыНомерСтроки" id="26">
+					<DataPath>Объект.СоставГруппы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставГруппыНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СоставГруппыНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="СоставГруппыСтудент" id="29">
+					<DataPath>Объект.СоставГруппы.Студент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставГруппыСтудентКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СоставГруппыСтудентРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СоставГруппыДоговорНомер" id="32">
+					<DataPath>Объект.СоставГруппы.ДоговорНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставГруппыДоговорНомерКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СоставГруппыДоговорНомерРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СоставГруппыСтоимостьОбучения" id="35">
+					<DataPath>Объект.СоставГруппы.СтоимостьОбучения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставГруппыСтоимостьОбученияКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СоставГруппыСтоимостьОбученияРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПереводНаСледующийУровень</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

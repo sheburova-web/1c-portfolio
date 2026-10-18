@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.Студенты" id="833f2ed8-eb38-480a-8e4c-73c31b4029ce" configVersion="96877e077bd4e54690eb90c794a6e9fd00000000">
+			<Metadata name="Catalog.Студенты.Attribute.ДатаРождения" id="048cc4c1-8b79-4a4f-929e-d37a1549d4ba"/>
+			<Metadata name="Catalog.Студенты.Attribute.Женат" id="401b2483-3e7e-4fc6-8ba3-8949c8bb0644"/>
+			<Metadata name="Catalog.Студенты.Attribute.Картинка" id="adf8d8be-68b5-4240-85bb-7cb12c46071c"/>
+			<Metadata name="Catalog.Студенты.Attribute.НомерТелефона" id="d277c79d-27c0-499c-a421-63a6cac64d24"/>
+		</Metadata>
+		<Metadata name="Catalog.Студенты.Form.ФормаЭлемента" id="7bd97a90-03e0-4fe2-930c-c7f6466eef96" configVersion="f2d52293616bcc4290719e3448d4bf7300000000"/>
+		<Metadata name="Catalog.Студенты.Form.ФормаЭлемента.Form" id="7bd97a90-03e0-4fe2-930c-c7f6466eef96.0" configVersion="56c9657e05ad00458df0ee497634e02c00000000"/>
+		<Metadata name="Catalog.Файлы" id="07ada972-6966-496d-b5bd-50f10c4ac74b" configVersion="bdce94e41665b14c8745c8f5d22f462000000000">
+			<Metadata name="Catalog.Файлы.Attribute.Файл" id="afad1d24-202c-43b1-ba6e-4fafb8b34a4c"/>
+		</Metadata>
+		<Metadata name="Configuration.Конфигурация" id="72da3512-b149-4b9d-9dcc-4fe284120167" configVersion="87a55cc9b5b6af4d93e364556b4ae0e500000000"/>
+		<Metadata name="Configuration.Конфигурация.MainSectionCommandInterface" id="347c9e7b-1d4f-4e04-9395-d37009414a20.9" configVersion="3e290bf584eaf94da7a2e22a1b28b8dd00000000"/>
+		<Metadata name="Document.Голосовать" id="daa05fa6-8985-40e9-a706-b93aab908378" configVersion="ea0b5fdef0b82f438534e5de6943620a00000000">
+			<Metadata name="Document.Голосовать.Attribute.Остроумие" id="12fdace8-ca9f-4a2c-805c-0d5f058e02af"/>
+			<Metadata name="Document.Голосовать.Attribute.ВредныеПривычки" id="2239f9da-b39b-45e5-a112-9424d368ad35"/>
+			<Metadata name="Document.Голосовать.Attribute.Порядочность" id="3327a9a4-959e-4ac9-83a6-692f152e7f83"/>
+			<Metadata name="Document.Голосовать.Attribute.Пользователь" id="39f9f0b8-098d-485c-beed-abd711b14b4d"/>
+			<Metadata name="Document.Голосовать.Attribute.Состоятельность" id="3e777962-31c6-4702-8750-ad09fc14ace4"/>
+			<Metadata name="Document.Голосовать.Attribute.Студент" id="65c041e4-7a11-4a5a-9da1-72e63056631b"/>
+			<Metadata name="Document.Голосовать.Attribute.Красота" id="9ae84b4d-776d-46b4-97f7-c681df49df6f"/>
+		</Metadata>
+		<Metadata name="Document.Голосовать.Form.ФормаДокумента" id="ae8573d8-f0c1-4613-8081-96034155ccc5" configVersion="a45687001cf44c4899381709a07bed0700000000"/>
+		<Metadata name="Document.Голосовать.Form.ФормаДокумента.Form" id="ae8573d8-f0c1-4613-8081-96034155ccc5.0" configVersion="2fcf8023ae176047a06501926f40ef6e00000000"/>
+		<Metadata name="Document.Голосовать.ObjectModule" id="daa05fa6-8985-40e9-a706-b93aab908378.0" configVersion="b9cd2b1a2e2676489b6dbb19acd7a3b500000000"/>
+		<Metadata name="InformationRegister.ЖурналГолосований" id="9f35085c-c001-471e-9c2c-5fca739bc317" configVersion="e468ed66cedc584fb48c4f1a37728ac300000000">
+			<Metadata name="InformationRegister.ЖурналГолосований.Dimension.Студент" id="0277300f-e882-43a4-9f1d-db68b5ecc115"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Resource.Остроумие" id="364628ea-2128-4fc3-a5a9-a76b68929276"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Resource.Красота" id="3d4b80c9-3b42-4200-bc96-61b567a4b223"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Resource.Рейтинг" id="4c9a824c-e82c-4a1c-a2a0-ad617ab7db8b"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Resource.ВредныеПривычки" id="4ccaa120-5728-4751-ae48-0366b8a100b8"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Dimension.Пользователь" id="57fc8793-9e3f-49bd-bd6a-d4861d4db6fc"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Resource.Состоятельность" id="6c808eab-ecc3-4757-9cb1-2fe971434e2b"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Resource.Порядочность" id="8d5d772a-d16b-4d35-94a7-02065fdcf2cd"/>
+			<Metadata name="InformationRegister.ЖурналГолосований.Attribute.Женат" id="cb8dfee7-887c-4385-9266-c78a154cb24b"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="a89e3af6-ece5-47d2-b60e-7053cf9caf46" configVersion="484a66e6ed9efc41a01eeb894564f09100000000"/>
+		<Metadata name="Report.СамыеПопулярныеСтуденты" id="45e98256-b947-4e7c-aaa0-1951917fbc24" configVersion="eae58734a08e5d41a5a6c6ba61ea857d00000000"/>
+		<Metadata name="Report.СамыеПопулярныеСтуденты.Template.ОсновнаяСхемаКомпоновкиДанных" id="dcc8bece-c15a-4615-bda5-e9488b7bcaa1" configVersion="61319deb2d3aab43abf31f186196bfa500000000"/>
+		<Metadata name="Report.СамыеПопулярныеСтуденты.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="dcc8bece-c15a-4615-bda5-e9488b7bcaa1.0" configVersion="1b3ab4434757cf44a7657221767a590000000000"/>
+		<Metadata name="Role.Админ" id="9f975735-acc2-40ee-9ba4-474d560ab976" configVersion="6c54a275820609479450d78157408fda00000000"/>
+		<Metadata name="Role.Админ.Rights" id="9f975735-acc2-40ee-9ba4-474d560ab976.0" configVersion="efd8b707d50bf048926de15e7183598d00000000"/>
+		<Metadata name="Role.Пользователь" id="2f432f56-6a45-40d5-9aca-ff03c98b54f2" configVersion="9f268b15700a594ca58d7facee71c33900000000"/>
+		<Metadata name="Role.Пользователь.Rights" id="2f432f56-6a45-40d5-9aca-ff03c98b54f2.0" configVersion="7806122d9dbcec47bcd02aef68356a5600000000"/>
+		<Metadata name="Subsystem.Голосование" id="a2eadc79-a37a-4299-9337-93fd54c76588" configVersion="450bc5c4667d3c4b9f3ece69822c009b00000000"/>
+		<Metadata name="Subsystem.Голосование.CommandInterface" id="a2eadc79-a37a-4299-9337-93fd54c76588.1" configVersion="73d5c1dd8876344f8973c774d141cd5b00000000"/>
+		<Metadata name="Subsystem.Прочее" id="83536911-e247-42fd-b7d3-5e54ef68ee32" configVersion="9e22097eeaf1a841937f18066aa45f3d00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

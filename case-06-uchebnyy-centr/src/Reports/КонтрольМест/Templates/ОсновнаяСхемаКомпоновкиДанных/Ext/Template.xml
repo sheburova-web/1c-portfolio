@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Курс</dataPath>
+			<field>Курс</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Группа</dataPath>
+			<field>Группа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВсегоМест</dataPath>
+			<field>ВсегоМест</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего мест</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаполненоМест</dataPath>
+			<field>ЗаполненоМест</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнено мест</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Студент</dataPath>
+			<field>Студент</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>           ВЫБРАТЬ
+    Группы.Курс КАК Курс,
+    Группы.Наименование КАК Группа,
+    Группы.Курс.МаксимумМестВГруппе КАК ВсегоМест,
+    КОЛИЧЕСТВО(Активные.Студент) КАК ЗаполненоМест
+ИЗ
+    Справочник.Группы КАК Группы
+    ЛЕВОЕ СОЕДИНЕНИЕ (
+        ВЫБРАТЬ
+            СоставГрупп.Группа КАК Группа,
+            СоставГрупп.Студент КАК Студент
+        ИЗ
+            РегистрНакопления.СоставГрупп КАК СоставГрупп
+        ГДЕ
+            СоставГрупп.ФлагОбучения = 1
+            И СоставГрупп.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+            И НЕ СоставГрупп.Студент В (
+                ВЫБРАТЬ
+                    Внутренний.Студент
+                ИЗ
+                    РегистрНакопления.СоставГрупп КАК Внутренний
+                ГДЕ
+                    Внутренний.Группа = СоставГрупп.Группа
+                    И Внутренний.Студент = СоставГрупп.Студент
+                    И Внутренний.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+            )
+    ) КАК Активные
+    ПО Группы.Ссылка = Активные.Группа
+СГРУППИРОВАТЬ ПО
+    Группы.Курс,
+    Группы.Наименование,
+    Группы.Курс.МаксимумМестВГруппе</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ЗаполненоИВсегоМест</dataPath>
+		<expression>Формат(ЗаполненоМест, "ЧГ=0") + " / " + Формат(ВсегоМест, "ЧГ=0")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заполнено мест / Всего мест</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ЗаполненоМест</dataPath>
+		<expression>Сумма(ЗаполненоМест)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВсегоМест</dataPath>
+		<expression>Сумма(ВсегоМест)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Курс</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Группа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаполненоИВсегоМест</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
